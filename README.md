@@ -16,6 +16,7 @@ A CNN, trained to distinguish between open and closed eyes, processes live video
   - [Contents](#contents)
   - [Jupyter Notebook: Driver Drowsiness Detector - CNN](#jupyter-notebook-driver-drowsiness-detector---cnn)
   - [Python File: Real-time Drowsiness Detection](#python-file-real-time-drowsiness-detection)
+  - [The Output : Real-time Detection Screenshorts](#python-file-real-time-drowsiness-detection)
 
 ## Jupyter Notebook: Driver Drowsiness Detector - CNN
 
@@ -42,18 +43,17 @@ Both files use the trained model (`Watchdog.h5`) for drowsiness detection. The m
 
 This system is designed to detect driver drowsiness using a combination of CNN, Python, and OpenCV. The primary goal is to reduce road accidents by alerting drivers when they show signs of drowsiness.
 
-### Key Features:
+## The Output 
 
-- **Detection Mechanism**: The system detects facial features, specifically the eyes, to determine whether they are open or closed.
-- **Alert System**: If the driver's eyes are detected to be closed for more than 3 seconds, an alarm is triggered to alert the driver.
-- **Technology Stack**: Built using Python, OpenCV for video processing, and Keras (TensorFlow) for the neural network.
+1. Open Eyes:
+   ![Drowsiness Dataset](Images/Eyes_open.png)
+   
 
-### How It Works:
+3. Close eyes
+   Here we detect wheater the eyes are closed and count the number of frames for which the eyes were closed (which is 10 frame) greater then that the Alarm will ring and the WARNING sign is displayed.
+   ![Drowsiness Dataset](Images/Eyes_closed.png)
 
-1. **Face and Eye Detection**: The system uses Haar cascade classifiers to detect faces and eyes in the video feed.
-2. **Model Prediction**: A CNN model, trained to distinguish between open and closed eyes, processes each frame from the video feed.
-3. **Alarm Trigger**: If the eyes remain closed for 3 consecutive seconds, the system plays an alarm sound to wake the driver.
-
+   
 Feel free to explore the code and adapt it to your specific requirements. If you have any questions or suggestions, please don't hesitate to reach out!
 
 ---
