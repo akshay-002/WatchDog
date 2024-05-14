@@ -30,7 +30,7 @@ A CNN, trained to distinguish between open and closed eyes, processes live video
 7. [Conclusion](#8-conclusion)
 8. [Acknowledgements](#9-thankyou)
 
-The Jupyter notebook file (`Driver Drowsiness Detector-CNN.ipynb`) contains the complete pipeline for the driver drowsiness detection system. It includes data exploration, preprocessing, model training, evaluation, and predictions. Various techniques such as data augmentation and CNN architecture design are discussed.
+The Jupyter notebook file (`driver_drowsiness.ipynb`) contains the complete pipeline for the driver drowsiness detection system. It includes data exploration, preprocessing, model training, evaluation, and predictions. Various techniques such as data augmentation and CNN architecture design are discussed.
 
 ## Python File: Real-time Drowsiness Detection
 
